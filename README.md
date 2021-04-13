@@ -1,7 +1,9 @@
 # ELK-Stack-Project-I
+
 Tanveer Khan 04/03/2021 SMU Cybersecurity Boot Camp
 
-This is a repository containing details of the ELK Stack Project.
+This is a collection of Linux scripts and Ansible scripts from my Cybersecurity Bootcamp class.
 
-The files in this repository were used to configure the network depicted below.
+Most of the scripts are used to configure cloud servers with different docker containers.
 
+The final setup was 4 servers running vulnerable DVWA containers along with a JumpBox and a server running an ELK Stack container.
