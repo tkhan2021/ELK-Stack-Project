@@ -50,11 +50,11 @@ The configuration details of each machine may be found below.
 | --- | --- | --- | --- |
 | Jumpbox | Gateway | 10.1.0.7 | Linux (Ubuntu 18.04 LTS |
 | --- | --- | --- | --- |
-| Web-1 | Web Server - Docker - DVWA | 10.1.0.7 | Linux (Ubuntu 18.04 LTS |
+| Web-1 | Web Server - Docker - DVWA | 10.1.0.5 | Linux (Ubuntu 18.04 LTS |
 | --- | --- | --- | --- |
-| Web-2 | Web Server - Docker - DVWA | 10.1.0.7 | Linux (Ubuntu 18.04 LTS |
+| Web-2 | Web Server - Docker - DVWA | 10.1.0.6 | Linux (Ubuntu 18.04 LTS |
 | --- | --- | --- | --- |
-| ELK Server | ELK Stack | 10.1.0.7 | Linux (Ubuntu 18.04 LTS |
+| ELK Server | ELK Stack | 10.1.0.4 | Linux (Ubuntu 18.04 LTS |
 | --- | --- | --- | --- |
 
 Access Policies
