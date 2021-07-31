@@ -14,8 +14,8 @@ These files have been tested and are now being used to create a live ELK deploym
 
 The following ansible-playbooks are needed to create and install DVWA and the ELK-server:
 
-C:\Users\tanve\Documents\GitHub\ELK-Stack-Project\Resources\my-playbook.yml
+![image]C:\Users\tanve\Documents\GitHub\ELK-Stack-Project\Resources\my-playbook.yml
 
-C:\Users\tanve\Documents\GitHub\ELK-Stack-Project\Resources\elk-playbook.yml
+![image]C:\Users\tanve\Documents\GitHub\ELK-Stack-Project\Resources\elk-playbook.yml
 
-C:\Users\tanve\Documents\GitHub\ELK-Stack-Project\Resources\filebeat.playbook.yml
+![image]C:\Users\tanve\Documents\GitHub\ELK-Stack-Project\Resources\filebeat.playbook.yml
