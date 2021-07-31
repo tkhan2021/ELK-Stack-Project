@@ -59,18 +59,20 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-Personal IP Address
+- Personal IP Address
 
 Machines within the network can only be accessed by SSH.
 
-The ELK-Server is only accessible by SSH from the JumpBox and via web access from Personal IP Address.
+- The ELK-Server is only accessible by SSH from the JumpBox and via web access from Personal IP Address.
+
 A summary of the access policies in place can be found in the table below.
 
-Name	Publicly Accessible	Allowed IP Address
-Jump-Box	No	Personal IP Address
-Web-1	Yes Thru Load Ballancer	13.66.204.159 LB Public IP 10.0.0.4 - JumpBox
-Web-2	Yes Thru Load Ballancer	13.66.204.159 LB Public IP 10.0.0.4 JumpBox
-ELK-Server	No	SSH 10.0.0.4 - JumpBox HTTP Port 5601 Personal IP
+| Name	| Publicly Accessible |	Allowed IP Address |
+| --- | --- | --- |
+| Jump-Box |	No	| Personal IP Address |
+| Web-1	| Yes - Load Balancer	13.66.204.159 | Public IP 10.0.0.4 - JumpBox |
+| Web-2 |	Yes - Load Balancer	13.66.204.159 | Public IP 10.0.0.4 JumpBox |
+| ELK-Server |	No |	SSH 10.0.0.4 - JumpBox HTTP Port 5601 Personal IP |
 
 Elk Configuration
 
