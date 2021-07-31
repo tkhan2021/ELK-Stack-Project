@@ -36,13 +36,10 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 Filebeat watches for log files/locations and collect log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
 Metricbeat records metrics and statistical data from the operating system and from services running on the server (Metricbeat: Lightweight Shipper for Metrics)
+
 The configuration details of each machine may be found below.
 
-Name	Function	IP Address	Operating System
-Jump Box	Gateway	10.1.0.7	Linux (Ubuntu 18.04 LTS)
-Web-1	Web Server - Docker - DVWA	10.1.0.5	Linux (Ubuntu 18.04 LTS)
-Web-2	Web Server - Docker - DVWA	10.1.0.6	Linux (Ubuntu 18.04 LTS)
-ELK-Server	ELK Stack	10.0.0.4	Linux (Ubuntu 18.04 LTS)
+[VM Configs.xlsx](https://github.com/tkhan2021/ELK-Stack-Project/files/6910657/VM.Configs.xlsx)
 
 Access Policies
 
