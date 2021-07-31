@@ -120,4 +120,34 @@ SSH into the control node and follow the steps below:
 
 Which file is the playbook? The playbook files are:
 
+- my-playbook.yml
+- elk-playbook.yml
+- filebeat-playbook.yml
 
+Where do you copy it?
+
+/etc/ansible/
+
+Which file do you update to make Ansible run the playbook on a specific machine?
+
+/etc/ansible/hosts.cfg
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+
+/etc/ansible/hosts - you configure where each machine should be installed whether it is ELK Server or FileBeat
+
+Which URL do you navigate to in order to check that the ELK server is running?
+
+http://publicip(elkserver):5601
+
+## Commands needed to run the Anisble Configuration for the Elk-Server are:
+
+1. ssh RedAdmin@JumpBox (your private IP)
+2. sudo docker container list -a - Locates the ansible container
+3. sudo docker start (unique_name)
+4. sudo docker attach (unique_name)
+5. cd /etc/ansible
+6. ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
+7. cd /etc/ansible/
+8. ansible-playbook beats-playbook.yml (Installs and Configures FileBeat)
+9. Open a new browser on any of your web browser platform, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up the Kibana Web Portal
