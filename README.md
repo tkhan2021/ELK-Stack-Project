@@ -12,5 +12,5 @@ The final setup was 4 servers running vulnerable DVWA containers along with a Ju
 
 These files have been tested and are now being used to create a live ELK deployment on Azure. They may be used to re-create the whole deployment seen in the image above. Select components of the playbook (.yml) file, such as Filebeat, can also be used to install only certain parts of it.
 
-The following ansible-playbooks are needed to create and install DVWA and the ELK-server
+The following ansible-playbooks are needed to create and install DVWA and the ELK-server:
 
