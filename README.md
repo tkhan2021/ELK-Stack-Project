@@ -18,12 +18,12 @@ Please use the .yml links above to view playbook codes.
 
 This document contains the following details:
 
-Description of the Topology
-Access Policies
-ELK Configuration
-Beats in Use
-Machines Being Monitored
-How to Use the Ansible Build
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+- Beats in Use
+- Machines Being Monitored
+- How to Use the Ansible Build
 
 Description of the Topology
 
@@ -40,7 +40,7 @@ Metricbeat records metrics and statistical data from the operating system and fr
 
 The configuration details of each machine may be found below.
 
-![VM Config](https://user-images.githubusercontent.com/74847116/127728212-368c6c1f-a99b-4a55-99fd-b4a7c10bb2eb.png)
+
 
 Access Policies
 
