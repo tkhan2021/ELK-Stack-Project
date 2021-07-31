@@ -16,6 +16,10 @@ These files have been tested and are now being used to create a live ELK deploym
 
 The following ansible-playbooks are needed to create and install DVWA and the ELK-server:
 
+- my-playbook.yml
+- elk-playbook.yml
+- filebeat.playbook.yml
+
 ### Please use the .yml links in the main branch to view playbook codes.
 
 ## This document contains the following details:
@@ -23,8 +27,8 @@ The following ansible-playbooks are needed to create and install DVWA and the EL
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-- Beats in Use
-- Machines Being Monitored
+-- Beats in Use
+-- Machines Being Monitored
 - How to Use the Ansible Build
 
 ## Description of the Topology
