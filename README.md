@@ -16,7 +16,7 @@ These files have been tested and are now being used to create a live ELK deploym
 
 The following ansible-playbooks are needed to create and install DVWA and the ELK-server:
 
-### Please use the .yml links above to view playbook codes.
+### Please use the .yml links in the main branch to view playbook codes.
 
 ## This document contains the following details:
 
@@ -27,9 +27,9 @@ The following ansible-playbooks are needed to create and install DVWA and the EL
 - Machines Being Monitored
 - How to Use the Ansible Build
 
-Description of the Topology
+## Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network. Load Balancing ensures availability to the web-servers which is the availability aspect of security in regards to the CIA Triad.
 
