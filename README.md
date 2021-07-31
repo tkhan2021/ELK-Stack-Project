@@ -39,7 +39,7 @@ Metricbeat records metrics and statistical data from the operating system and fr
 
 The configuration details of each machine may be found below.
 
-[VM Configs.xlsx](https://github.com/tkhan2021/ELK-Stack-Project/files/6910657/VM.Configs.xlsx)
+![VM Configs.xlsx](https://github.com/tkhan2021/ELK-Stack-Project/files/6910657/VM.Configs.xlsx)
 
 Access Policies
 
