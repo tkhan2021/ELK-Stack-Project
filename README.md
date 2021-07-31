@@ -14,7 +14,7 @@ These files have been tested and are now being used to create a live ELK deploym
 
 The following ansible-playbooks are needed to create and install DVWA and the ELK-server:
 
-Please use .yml links above to view playbook codes.
+Please use the .yml links above to view playbook codes.
 
 This document contains the following details:
 
@@ -25,6 +25,7 @@ Beats in Use
 Machines Being Monitored
 How to Use the Ansible Build
 Description of the Topology
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network. Load Balancing ensures availability to the web-servers which is the availability aspect of security in regards to the CIA Triad.
@@ -42,7 +43,9 @@ Jump Box	Gateway	10.1.0.7	Linux (Ubuntu 18.04 LTS)
 Web-1	Web Server - Docker - DVWA	10.1.0.5	Linux (Ubuntu 18.04 LTS)
 Web-2	Web Server - Docker - DVWA	10.1.0.6	Linux (Ubuntu 18.04 LTS)
 ELK-Server	ELK Stack	10.0.0.4	Linux (Ubuntu 18.04 LTS)
+
 Access Policies
+
 The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
@@ -58,7 +61,9 @@ Jump-Box	No	Personal IP Address
 Web-1	Yes Thru Load Ballancer	13.66.204.159 LB Public IP 10.0.0.4 - JumpBox
 Web-2	Yes Thru Load Ballancer	13.66.204.159 LB Public IP 10.0.0.4 JumpBox
 ELK-Server	No	SSH 10.0.0.4 - JumpBox HTTP Port 5601 Personal IP
+
 Elk Configuration
+
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 The main advantage of automating the installation process is that we could deploy multiple servers easily and quickly without having to physically touch each server.
@@ -68,9 +73,10 @@ Install Docker.io and pip3
 Increases VM memory
 Download and Configure elk docker container
 Sets Published Ports
+
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-docker-ps
+![docker-ps](https://user-images.githubusercontent.com/74847116/127727841-acccfd8a-2995-46ae-9236-05bc7078788b.png)
 
 Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -81,11 +87,13 @@ We have installed the following Beats on these machines:
 
 Filebeat
 Metricbeat
+
 These Beats allow us to collect the following information from each machine:
 
 Filebeat watches for log files/locations and collect log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
 Metricbeat records metrics and statistical data from the operating system and from services running on the server (Metricbeat: Lightweight Shipper for Metrics)
 Using the Playbook
+
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
