@@ -6,13 +6,13 @@ This is a collection of Linux scripts and Ansible scripts from my Cybersecurity 
 
 The scripts are used to configure cloud servers with different docker containers.
 
-The final setup was 4 servers running vulnerable DVWA containers along with a JumpBox and a server running an ELK Stack container.
+The final setup was 4 servers running vulnerable DVWA containers along with a JumpBox Provisioner and a server running an ELK Stack container.
 
 ## Network Topology
 
 ![image](https://user-images.githubusercontent.com/74847116/127726650-730e7627-7b1e-4340-b4b7-44b6b8a1a9ea.png)
 
-These files have been tested and are now being used to create a live ELK deployment on Azure. They may be used to re-create the whole deployment seen in the image above. Select components of the playbook (.yml) file, such as Filebeat, can also be used to install only certain parts of it.
+These files have been thoroughly tested and are now being used to set up an ELK deployment on Azure. They can be used to re-create the entire deployment seen above. Only some elements of the playbook (.yml) file, such as Filebeat, can be installed.
 
 The following ansible-playbooks are needed to create and install DVWA and the ELK-server:
 
@@ -20,7 +20,7 @@ The following ansible-playbooks are needed to create and install DVWA and the EL
 - elk-playbook.yml
 - filebeat.playbook.yml
 
-### Please use the .yml links in the main branch to view playbook codes.
+### Please use the .yml links above to view playbook codes.
 
 ## This document contains the following details:
 
@@ -35,35 +35,37 @@ The following ansible-playbooks are needed to create and install DVWA and the EL
 
 The purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network. Load Balancing ensures availability to the web-servers which is the availability aspect of security in regards to the CIA Triad.
+Load balancing ensures that the system is highly available while also restricting network access to select IP addresses. Load Balancing ensures the web-servers' availability, which is an important part of security in the CIA Triad.
 
-What is the advantage of a jump box? The main advantage of using a JumpBox is having one origination point for administrative tasks. This ultimately sets the JumpBox as a Secure Admin Workstation (SAW). In order to conduct administrative tasks administrators are required to access the JumpBox before accessing the other servers.
+What is the advantage of a jump box? 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
+Using a JumpBox Provisioner has the advantage of providing a single point of entry for administrative functions. As a result, the JumpBox Provisioner becomes a Secure Administrative Workstation (SAW). Administrators must first access the JumpBox Provisioner before proceeding to other servers to perform administrative operations.
 
-- Filebeat watches for log files/locations and collect log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
-- Metricbeat records metrics and statistical data from the operating system and from services running on the server (Metricbeat: Lightweight Shipper for Metrics)
+Users can quickly monitor the susceptible VMs for changes to the logs and system traffic by integrating an ELK server.
 
-The configuration details of each machine may be found below.
+- Filebeat watches for log files/locations and collects log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
+- Metricbeat records metrics and statistical data from the operating system and from services running on the server. (Metricbeat: Lightweight Shipper for Metrics)
+
+The configuration details of each machine may be found below:
 
 | Name | Function | IP Address | Operating System |
 | --- | --- | --- | --- |
-| Jumpbox | Gateway | 10.1.0.7 | Linux (Ubuntu 18.04 LTS |
+| Jumpbox Provisioner | Gateway | 10.1.0.7 | Linux (Ubuntu 18.04 LTS |
 | Web-1 | Web Server - Docker - DVWA | 10.1.0.5 | Linux (Ubuntu 18.04 LTS |
 | Web-2 | Web Server - Docker - DVWA | 10.1.0.6 | Linux (Ubuntu 18.04 LTS |
 | ELK Server | ELK Stack | 10.1.0.4 | Linux (Ubuntu 18.04 LTS |
 
 ## Access Policies
 
-The machines on the internal network are not exposed to the public Internet.
+The machines on the internal network are not exposed to the Public Internet.
 
-Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump Box Provisioner machine can accept connections from the Public Internet. Access to this machine is only allowed from the following IP addresses:
 
 - Personal IP Address
 
 Machines within the network can only be accessed by SSH.
 
-- The ELK-Server is only accessible by SSH from the JumpBox and via web access from Personal IP Address.
+- The ELK-Server is only accessible by SSH from the JumpBox Provisioner and via web access from the Personal IP Address.
 
 A summary of the access policies in place can be found in the table below.
 
