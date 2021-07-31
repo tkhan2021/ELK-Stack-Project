@@ -1,4 +1,4 @@
-# ELK-Stack-Project-I
+# ELK-Stack-Project
 
 Tanveer Khan 04/03/2021 SMU Cybersecurity Boot Camp
 
@@ -24,6 +24,7 @@ ELK Configuration
 Beats in Use
 Machines Being Monitored
 How to Use the Ansible Build
+
 Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -39,7 +40,7 @@ Metricbeat records metrics and statistical data from the operating system and fr
 
 The configuration details of each machine may be found below.
 
-![VM Configs.xlsx](https://github.com/tkhan2021/ELK-Stack-Project/files/6910657/VM.Configs.xlsx)
+![VM Config](https://user-images.githubusercontent.com/74847116/127728212-368c6c1f-a99b-4a55-99fd-b4a7c10bb2eb.png)
 
 Access Policies
 
@@ -48,6 +49,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
 Personal IP Address
+
 Machines within the network can only be accessed by SSH.
 
 The ELK-Server is only accessible by SSH from the JumpBox and via web access from Personal IP Address.
