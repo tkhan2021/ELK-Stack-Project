@@ -74,7 +74,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-2 |	Yes - Load Balancer	13.66.204.159 | Public IP 10.0.0.4 JumpBox |
 | ELK-Server |	No |	SSH 10.0.0.4 - JumpBox HTTP Port 5601 Personal IP |
 
-Elk Configuration
+## Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
