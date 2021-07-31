@@ -27,8 +27,8 @@ The following ansible-playbooks are needed to create and install DVWA and the EL
 - Description of the Topology
 - Access Policies
 - ELK Configuration
--- Beats in Use
--- Machines Being Monitored
+  - Beats in Use
+  - Machines Being Monitored
 - How to Use the Ansible Build
 
 ## Description of the Topology
