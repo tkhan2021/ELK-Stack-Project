@@ -76,41 +76,48 @@ A summary of the access policies in place can be found in the table below.
 
 ## Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate the ELK machine's configuration. There was no manual configuration, which is advantageous because...
 
-The main advantage of automating the installation process is that we could deploy multiple servers easily and quickly without having to physically touch each server.
+- The benefit of automating the installation procedure is that we can rapidly and easily deploy several servers without having to manually configure each one.
+
 The playbook implements the following tasks:
 
-Install Docker.io and pip3
-Increases VM memory
-Download and Configure elk docker container
-Sets Published Ports
+1. Install Docker.io and pip3
+2. Increases VM memory
+3. Download and Configure elk docker container
+4. Sets Published Ports
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
 ![docker-ps](https://user-images.githubusercontent.com/74847116/127727841-acccfd8a-2995-46ae-9236-05bc7078788b.png)
 
-Target Machines & Beats
+## Target Machines & Beats
+
 This ELK server is configured to monitor the following machines:
 
-Web-1 10.1.5
-Web-2 10.1.6
+- Web-1 10.1.5
+- Web-2 10.1.6
+
 We have installed the following Beats on these machines:
 
-Filebeat
-Metricbeat
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 
-Filebeat watches for log files/locations and collect log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
-Metricbeat records metrics and statistical data from the operating system and from services running on the server (Metricbeat: Lightweight Shipper for Metrics)
-Using the Playbook
+- Filebeat watches for log files/locations and collect log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
+- Metricbeat records metrics and statistical data from the operating system and from services running on the server (Metricbeat: Lightweight Shipper for Metrics)
+
+## Using the Playbook
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 
-Copy the filebeat-config.yml and metricbeat-config.yml file to /etc/ansible/files.
-Update the configuration files to include the Private IP of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File
-Run the playbook, and navigate to ELK-Server-PublicIP:5601/app/kibana to check that the installation worked as expected.
+- Copy the filebeat-config.yml and metricbeat-config.yml file to /etc/ansible/files.
+- Update the configuration files to include the Private IP of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File
+- Run the playbook, and navigate to ELK-Server-PublicIP:5601/app/kibana to check that the installation worked as expected.
+
 Which file is the playbook? The playbook files are:
+
+
